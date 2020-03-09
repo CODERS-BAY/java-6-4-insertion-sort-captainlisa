@@ -10,6 +10,11 @@ public class Main {
         System.out.println(Arrays.toString(numbers));
 
 
+        sortArray(numbers);
+
+    }
+
+    private static void sortArray(int[] numbers) {
         for (int i = 1; i < numbers.length; i++) {
             int unsorted = numbers[i];
             int j = i - 1;
@@ -21,7 +26,6 @@ public class Main {
             numbers[j + 1] = unsorted;
             System.out.println(Arrays.toString(numbers));
         }
-
     }
 
 }
